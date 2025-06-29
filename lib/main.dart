@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'register_login.dart'; // import da outra tela
 
 void main() {
   runApp(const MyApp());
@@ -67,6 +68,13 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
+  void _goToRegister() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const RegisterScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -116,6 +124,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 TextButton(
                   onPressed: () {},
                   child: const Text('Esqueci minha senha'),
+                ),
+                const SizedBox(height: 8),
+                TextButton(
+                  onPressed: _goToRegister,
+                  child: const Text('Cadastrar'),
                 ),
               ],
             ),
