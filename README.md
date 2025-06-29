@@ -1,16 +1,17 @@
-# tela_login
+ Login Flutter com Tela de Cadastro Separada
 
-A new Flutter project.
+Este é um projeto Flutter simples contendo:
 
-## Getting Started
+- Uma tela de **Login**
+- Uma tela separada para **Cadastro**
+- Navegação entre telas
 
-This project is a starting point for a Flutter application.
+## 🎯 Objetivo
 
-A few resources to get you started if this is your first Flutter project:
+Demonstrar uma estrutura de projeto limpa e escalável em Flutter, separando a lógica de cada tela em arquivos diferentes para facilitar manutenção e organização.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📂 Estrutura do Projeto
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+/lib
+├── main.dart // Tela de login + entrada do app
+└── register_screen.dart // Tela de cadastro separada
